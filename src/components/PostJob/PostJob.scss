@@ -1,0 +1,130 @@
+.skillItem {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.addScreeningQuestionsItems {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        .btn.btn-adScreeningQuestion {
+            border: 1px solid #dddddd;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 4px;
+        }
+    }
+}
+
+.DailyBudgetSlider {
+    .ant-slider {
+        position: relative;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 28px;
+            border-radius: 100%;
+            border: 4px solid var(--main-color);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+        }
+    }
+
+    .ant-input-number-input,
+    .ant-input-number,
+    .dailyBudgetGroupSymbol {
+        font-size: 25px;
+        font-weight: 600;
+        color: var(--main-color);
+        border: 0;
+        padding-left: 0;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 0;
+        }
+    }
+
+    .ant-input-number-focused {
+        outline: none;
+        box-shadow: none;
+        border: 0;
+    }
+
+    .ant-input-number {
+        width: 70px;
+    }
+}
+
+.jobPostSuccess {
+    background-color: #E9FFE5;
+
+    h3 {
+        font-size: 24px;
+        line-height: calc(100% + 5px);
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.userInterfaceGrid {
+    @media (min-width:1200px) {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+        .commonInterface+.commonInterface {
+            border-left: 1px solid #dddddd
+        }
+    }
+}
+
+.commonInterface {
+    font-weight: 500;
+}
+
+.userInterfaceDesigner {
+    p {
+        line-height: calc(100% + 12px);
+    }
+}
+
+
+.uploadLifeAtVideo {
+    .ant-upload {
+        width: 100%;
+        border-radius: 4px;
+    }
+    .btn-uploadLifeAtVideo {
+        width: 100% !important;
+        height: 165px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed var(--main-color);
+        background-color: transparent;
+        border-radius: 4px;
+    }
+}

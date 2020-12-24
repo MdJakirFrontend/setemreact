@@ -1,0 +1,56 @@
+.dashboardCalendar {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.react-daypicker-root {
+    width: 100% !important;
+    min-height: 410px;
+
+    table {
+        width: 100%;
+    }
+}
+
+.react-daypicker-root th,
+.react-daypicker-root td {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.react-daypicker-root .day.active {
+    background-color: var(--main-color) !important;
+    border-radius: 100% !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.react-daypicker-root abbr[data-original-title],
+.react-daypicker-root abbr[title] {
+    text-decoration: none;
+
+    color: #A3A6B4;
+    font-weight: 600;
+
+    @media (min-width:1800px) {
+        font-size: 15px;
+    }
+}
+
+.react-daypicker-root .header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.react-daypicker-root table thead {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd;
+}

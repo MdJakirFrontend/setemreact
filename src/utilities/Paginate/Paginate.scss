@@ -1,0 +1,26 @@
+.page-item {
+    &:first-child {
+        .page-link {
+            border-top-left-radius: 8px !important;
+            border-bottom-left-radius: 8px !important;
+        }
+    }
+    &:last-child {
+        .page-link {
+            border-top-right-radius: 8px !important;
+            border-bottom-right-radius: 8px !important;
+        }
+    }
+
+    .page-link {
+        color: #000000;
+        font-weight: 500;
+        padding: .8rem 1.2rem;
+    }
+
+    &.active .page-link {
+        background-color: var(--main-color) !important;
+        border-color: var(--main-color) !important;
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,62 @@
+table.CompanyQuestionTable {
+    border-spacing: 0px 1rem;
+
+    .ant-checkbox-checked .ant-checkbox-inner::after {
+        display: block;
+    }
+
+    thead {
+
+        th {
+            background-color: #8D8D8D !important;
+            border: 0;
+            color: #ffffff;
+            font-weight: 600;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            &:first-child {
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                overflow: hidden;
+            }
+
+            &:last-child {
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    td {
+        border: 0;
+        vertical-align: top;
+        padding: 20px !important;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .btn-answer:not(.btn-custom) {
+            background-color: transparent;
+            color: var(--main-color);
+            font-weight: 600;
+            font-size: 16px !important;
+            border-radius: 4px !important;
+            height: auto !important;
+
+            &:hover {
+                background-color: var(--main-color);
+                color: #ffffff;
+            }
+        }
+    }
+
+
+    .tableRowSpacer {
+        td {
+            padding: 5px 0 !important;
+        }
+    }
+}
